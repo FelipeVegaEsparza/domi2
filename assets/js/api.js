@@ -395,7 +395,7 @@ export async function getSonicPanelInfo() {
 export async function getCurrentSong() {
   try {
     const configData = await config;
-    const projectName = configData.project_name || 'Radio';
+    const projectName = configData.project_name || 'StudioDomi Radio';
     const data = await getSonicPanelInfo();
     
     let artist = 'En Vivo';
@@ -429,7 +429,7 @@ export async function getCurrentSong() {
     };
   } catch (error) {
     const configData = await config;
-    const projectName = configData.project_name || 'Radio';
+    const projectName = configData.project_name || 'StudioDomi Radio';
     secureLog.error('Error getting current song:', error);
     return {
       title: projectName,

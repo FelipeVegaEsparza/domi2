@@ -1,7 +1,7 @@
 {
-  "name": "@felipevegaesparza/radio-pwa-core",
+  "name": "studiodomi-radio",
   "version": "1.0.21",
-  "description": "PWA Radio Core - Sistema de radio streaming con templates personalizables",
+  "description": "StudioDomi Radio - Sistema de radio streaming con templates personalizables",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -17,14 +17,15 @@
     "responsive",
     "hostreams"
   ],
-  "author": "Hostreams",
+  "author": "StudioDomi Radio",
   "license": "MIT",
   "dependencies": {
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-rate-limit": "^8.4.1",
-    "helmet": "^7.1.0"
+    "helmet": "^7.1.0",
+    "sharp": "^0.35.1"
   },
   "engines": {
     "node": ">=16.0.0",

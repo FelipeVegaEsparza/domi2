@@ -45,7 +45,7 @@ class TitleUpdater {
     } catch (error) {
       console.error('TitleUpdater: Error loading config:', error);
       // Último fallback
-      this.projectName = 'Radio Stream';
+      this.projectName = 'StudioDomi Radio';
     }
   }
 

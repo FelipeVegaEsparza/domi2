@@ -95,7 +95,7 @@ class TemplateBase {
       // Actualizar nombre en footer
       const nameElement = document.getElementById(this.domIds.footerRadioName);
       if (nameElement) {
-        nameElement.textContent = data.projectName || 'Radio';
+        nameElement.textContent = data.projectName || 'StudioDomi Radio';
       }
       
       // Actualizar descripción en footer
@@ -127,7 +127,7 @@ class TemplateBase {
       }
       
       // Actualizar título de la página
-      document.title = data.projectName || 'Radio';
+      document.title = data.projectName || 'StudioDomi Radio';
       
       // Notificar al template hijo
       this.onBasicDataLoaded(data);
@@ -177,7 +177,7 @@ class TemplateBase {
 
     if (titleEl) {
       // Use title as primary
-      titleEl.textContent = songData.title || 'Radio';
+      titleEl.textContent = songData.title || 'StudioDomi Radio';
       console.log('TemplateBase: Set title to:', titleEl.textContent);
     }
     if (artistEl) {

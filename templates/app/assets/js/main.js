@@ -330,7 +330,7 @@ class AppTemplate extends TemplateBase {
         const dm2 = getDataManager();
         if (img && data.coverUrl) img.src = await dm2.getImageUrl(data.coverUrl);
         else if (img && data.logoUrl) img.src = await dm2.getImageUrl(data.logoUrl);
-        if (titleEl) titleEl.textContent = data.projectName || data.name || 'Nuestra Radio';
+        if (titleEl) titleEl.textContent = data.projectName || data.name || 'StudioDomi Radio';
         if (descEl) descEl.textContent = data.projectDescription || data.description || '';
       }).catch(() => {});
     }).catch(() => {});

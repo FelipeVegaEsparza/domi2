@@ -1,7 +1,7 @@
 {
-  "name": "Radio Fusion Austral",
-  "short_name": "Fusion Austral",
-  "description": "Desde la Patagonia al Mundo",
+  "name": "StudioDomi Radio",
+  "short_name": "StudioDomi",
+  "description": "StudioDomi Radio - La mejor música y entretenimiento.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait-primary",

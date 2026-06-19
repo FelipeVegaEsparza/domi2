@@ -638,7 +638,7 @@ class TradicionalTemplate extends TemplateBase {
     try {
       const dm = getDataManager();
       const data = await dm.loadBasicData();
-      if (t) t.textContent = data.projectName || data.name || 'Nuestra Radio';
+      if (t) t.textContent = data.projectName || data.name || 'StudioDomi Radio';
       const desc = data.projectDescription || data.description || '';
       if (d) d.textContent = desc;
       if (h) h.textContent = desc;

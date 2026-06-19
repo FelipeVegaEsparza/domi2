@@ -25,8 +25,8 @@ class MetaUpdater {
       const basicData = await getBasicData();
       
       this.projectData = {
-        name: basicData.projectName || basicData.name || 'Radio Stream',
-        description: basicData.projectDescription || 'Escucha nuestra radio online en vivo. Música, noticias y entretenimiento las 24 horas del día.',
+        name: basicData.projectName || basicData.name || 'StudioDomi Radio',
+        description: basicData.projectDescription || 'StudioDomi Radio - Escucha nuestra radio online en vivo. Música, noticias y entretenimiento las 24 horas del día.',
         logoUrl: basicData.logoUrl ? `https://dashboard.ipstream.cl${basicData.logoUrl}` : '/assets/icons/icon-512x512.png',
         coverUrl: basicData.coverUrl ? `https://dashboard.ipstream.cl${basicData.coverUrl}` : '/assets/icons/icon-512x512.png'
       };
@@ -36,8 +36,8 @@ class MetaUpdater {
       console.error('MetaUpdater: Error loading from API:', error);
       // Fallback data
       this.projectData = {
-        name: 'Radio Stream',
-        description: 'Escucha nuestra radio online en vivo. Música, noticias y entretenimiento las 24 horas del día.',
+        name: 'StudioDomi Radio',
+        description: 'StudioDomi Radio - Escucha nuestra radio online en vivo. Música, noticias y entretenimiento las 24 horas del día.',
         logoUrl: '/assets/icons/icon-512x512.png',
         coverUrl: '/assets/icons/icon-512x512.png'
       };

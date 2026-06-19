@@ -402,7 +402,7 @@ class BlueTemplate extends TemplateBase {
         const dataManager = getDataManager();
         img.src = await dataManager.getImageUrl(data.logoUrl);
       }
-      if (nameEl) nameEl.textContent = data.projectName || data.name || 'Nuestra Radio';
+      if (nameEl) nameEl.textContent = data.projectName || data.name || 'StudioDomi Radio';
       if (descEl) descEl.textContent = data.projectDescription || data.description || 'Estamos aquí para escucharte.';
       if (emailDisplay) {
         const resp = await fetch('/config/config.json');

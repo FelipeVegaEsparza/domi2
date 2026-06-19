@@ -797,7 +797,7 @@ class ModernoTemplate extends TemplateBase {
     try {
       const dm = getDataManager();
       const data = await dm.loadBasicData();
-      if (titleEl) titleEl.textContent = data.projectName || data.name || 'Nuestra Radio';
+      if (titleEl) titleEl.textContent = data.projectName || data.name || 'StudioDomi Radio';
       if (descEl) descEl.textContent = data.projectDescription || data.description || '';
     } catch (e) {}
   }

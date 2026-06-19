@@ -1239,7 +1239,7 @@ class PetroleoTemplate extends TemplateBase {
         const dm = getDataManager();
         img.src = await dm.getImageUrl(data.logoUrl);
       }
-      if (nameEl) nameEl.textContent = data.projectName || data.name || 'Nuestra Radio';
+      if (nameEl) nameEl.textContent = data.projectName || data.name || 'StudioDomi Radio';
       if (descEl) descEl.textContent = data.projectDescription || data.description || 'Estamos aquí para escucharte.';
       if (emailDisplay) {
         const resp = await fetch('/config/config.json');

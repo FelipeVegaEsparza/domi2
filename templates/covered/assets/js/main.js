@@ -996,7 +996,7 @@ class CoveredTemplate extends TemplateBase {
       } else if (img && data.logoUrl) {
         img.src = await dm.getImageUrl(data.logoUrl);
       }
-      if (titleEl) titleEl.textContent = data.projectName || data.name || 'Nuestra Radio';
+      if (titleEl) titleEl.textContent = data.projectName || data.name || 'StudioDomi Radio';
       if (descEl) descEl.textContent = data.projectDescription || data.description || 'Bienvenido a nuestra radio. Disfruta de la mejor música y contenido.';
     } catch (e) {
       console.warn('CoveredTemplate: Error loading about radio:', e);
@@ -1071,7 +1071,7 @@ class CoveredTemplate extends TemplateBase {
       } else if (img && data.logoUrl) {
         img.src = await dm.getImageUrl(data.logoUrl);
       }
-      if (nameEl) nameEl.textContent = data.projectName || data.name || 'Nuestra Radio';
+      if (nameEl) nameEl.textContent = data.projectName || data.name || 'StudioDomi Radio';
       if (descEl) descEl.textContent = data.projectDescription || data.description || 'Estamos aquí para escucharte.';
       if (emailDisplay) {
         const resp = await fetch('/config/config.json');
