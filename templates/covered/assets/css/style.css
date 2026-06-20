@@ -1717,9 +1717,8 @@ body {
     align-items: center;
   }
   .live-btn {
-    display: flex;
-    width: fit-content;
-    padding: 12px 28px;
+    display: inline-flex;
+    padding: 12px 32px;
     font-size: 0.85rem;
     gap: 8px;
     white-space: nowrap;
@@ -1770,13 +1769,15 @@ body {
     margin-bottom: 16px;
   }
   .live-btn {
-    display: flex;
-    width: fit-content;
-    padding: 10px 24px;
+    display: inline-flex;
+    padding: 8px 24px;
     font-size: 0.78rem;
     gap: 6px;
     flex-shrink: 0;
     white-space: nowrap;
+  }
+  .live-btn i {
+    font-size: 0.95rem;
   }
   .share-btn-hero {
     width: 40px;
