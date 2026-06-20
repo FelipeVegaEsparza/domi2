@@ -1713,9 +1713,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .share-btn-hero {
-    display: none;
-  }
   .player-stats-hero {
     justify-content: center;
     flex-wrap: wrap;
@@ -1767,9 +1764,6 @@ body {
   }
   .live-btn i {
     font-size: 0.95rem;
-  }
-  .share-btn-hero {
-    display: none !important;
   }
   .live-btn i {
     font-size: 0.95rem;
