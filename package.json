@@ -1,6 +1,6 @@
 {
   "name": "studiodomi-radio",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "StudioDomi Radio - Sistema de radio streaming con templates personalizables",
   "main": "server.js",
   "scripts": {
