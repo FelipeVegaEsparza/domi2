@@ -1717,7 +1717,9 @@ body {
     align-items: center;
   }
   .live-btn {
-    padding: 12px 24px;
+    display: flex;
+    width: fit-content;
+    padding: 12px 28px;
     font-size: 0.85rem;
     gap: 8px;
     white-space: nowrap;
@@ -1768,7 +1770,9 @@ body {
     margin-bottom: 16px;
   }
   .live-btn {
-    padding: 10px 16px;
+    display: flex;
+    width: fit-content;
+    padding: 10px 24px;
     font-size: 0.78rem;
     gap: 6px;
     flex-shrink: 0;
