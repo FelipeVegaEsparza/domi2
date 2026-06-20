@@ -32,19 +32,20 @@ class PWAInstaller {
   }
 
   detectDevice() {
-    // Detectar iOS
     this.isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     
-    // Detectar si ya está instalada como PWA
+    const alreadyInstalled = localStorage.getItem('pwa_installed') === 'true';
     this.isStandalone = window.matchMedia('(display-mode: standalone)').matches || 
-                       window.navigator.standalone === true;
+                       window.navigator.standalone === true ||
+                       alreadyInstalled;
     
     console.log('PWA: Device detection:', {
       userAgent: navigator.userAgent.substring(0, 50),
       isIOS: this.isIOS,
       isStandalone: this.isStandalone,
       standalone: window.navigator.standalone,
-      displayMode: window.matchMedia('(display-mode: standalone)').matches
+      displayMode: window.matchMedia('(display-mode: standalone)').matches,
+      alreadyInstalled
     });
   }
 
@@ -204,6 +205,8 @@ class PWAInstaller {
     // Event listener para cuando la app se instala
     window.addEventListener('appinstalled', (e) => {
       console.log('PWA: App installed successfully');
+      localStorage.setItem('pwa_installed', 'true');
+      this.isStandalone = true;
       this.hideFloatingButton();
       this.hideModal();
       this.showToast('¡Aplicación instalada correctamente!', 'success');
@@ -416,6 +419,8 @@ class PWAInstaller {
       
       if (outcome === 'accepted') {
         console.log('PWA: User accepted the install prompt');
+        localStorage.setItem('pwa_installed', 'true');
+        this.isStandalone = true;
         
         if (shouldEnableNotifications) {
           setTimeout(() => {
