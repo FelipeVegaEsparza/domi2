@@ -1710,14 +1710,12 @@ body {
     font-size: 1.1rem;
   }
   .hero-player-controls {
-    flex-direction: column;
+    display: grid;
     gap: 10px;
+    justify-items: center;
     margin-bottom: 16px;
-    justify-content: center;
-    align-items: center;
   }
   .live-btn {
-    display: inline-flex;
     padding: 12px 32px;
     font-size: 0.85rem;
     gap: 8px;
@@ -1769,11 +1767,9 @@ body {
     margin-bottom: 16px;
   }
   .live-btn {
-    display: inline-flex;
     padding: 8px 24px;
     font-size: 0.78rem;
     gap: 6px;
-    flex-shrink: 0;
     white-space: nowrap;
   }
   .live-btn i {
