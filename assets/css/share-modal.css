@@ -1,0 +1,227 @@
+.share-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.share-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.share-modal-content {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.share-modal-overlay.active .share-modal-content {
+  transform: scale(1);
+}
+
+.share-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+  font-size: 1rem;
+}
+
+.share-modal-close:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.share-modal-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.share-modal-header h3 {
+  margin: 0 0 5px;
+  font-size: 1.4rem;
+  color: #1a1a2e;
+  font-weight: 700;
+}
+
+.share-modal-header p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.share-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.share-modal-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 10px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+}
+
+.share-modal-btn i {
+  font-size: 1.5rem;
+}
+
+.share-modal-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.share-modal-btn:active {
+  transform: translateY(-1px);
+}
+
+.share-modal-btn.facebook {
+  background: #1877f2;
+}
+.share-modal-btn.twitter {
+  background: #1da1f2;
+}
+.share-modal-btn.whatsapp {
+  background: #25d366;
+}
+.share-modal-btn.telegram {
+  background: #0088cc;
+}
+.share-modal-btn.linkedin {
+  background: #0a66c2;
+}
+.share-modal-btn.email {
+  background: #ea4335;
+}
+
+.share-modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.share-modal-actions button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.share-modal-copy {
+  background: #1a1a2e;
+  color: #fff;
+}
+
+.share-modal-copy:hover {
+  background: #2a2a4e;
+}
+
+.share-modal-copy.copied {
+  background: #27ae60;
+}
+
+.share-modal-native {
+  background: transparent;
+  color: #1a1a2e;
+  border: 2px solid #e0e0e0;
+}
+
+.share-modal-native:hover {
+  border-color: #1a1a2e;
+  background: rgba(26, 26, 46, 0.05);
+}
+
+@media (max-width: 480px) {
+  .share-modal-content {
+    padding: 24px 20px;
+  }
+  .share-modal-grid {
+    gap: 10px;
+  }
+  .share-modal-btn {
+    padding: 14px 8px;
+    font-size: 0.7rem;
+  }
+  .share-modal-btn i {
+    font-size: 1.3rem;
+  }
+  .share-modal-actions {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .share-modal-content {
+    background: linear-gradient(135deg, #1e1e32 0%, #2a2a3e 100%);
+  }
+  .share-modal-header h3 {
+    color: #fff;
+  }
+  .share-modal-header p {
+    color: #aaa;
+  }
+  .share-modal-close {
+    color: #aaa;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .share-modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  .share-modal-native {
+    color: #fff;
+    border-color: #444;
+  }
+  .share-modal-native:hover {
+    border-color: #888;
+    background: rgba(255, 255, 255, 0.05);
+  }
+}

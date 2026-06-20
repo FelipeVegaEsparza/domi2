@@ -237,12 +237,10 @@ class BlueTemplate extends TemplateBase {
     document.querySelectorAll('.share-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
-        if (navigator.share) {
-          navigator.share({ url: window.location.href });
-        } else {
-          navigator.clipboard.writeText(window.location.href);
-          alert('Enlace copiado');
+        if (!window.shareModal) {
+          window.shareModal = new ShareModal();
         }
+        window.shareModal.show();
       });
     });
   }

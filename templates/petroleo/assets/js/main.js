@@ -1082,13 +1082,10 @@ class PetroleoTemplate extends TemplateBase {
     document.querySelectorAll('.share-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
-        const url = window.location.href;
-        if (navigator.share) {
-          navigator.share({ url });
-        } else {
-          navigator.clipboard.writeText(url);
-          alert('Enlace copiado al portapapeles');
+        if (!window.shareModal) {
+          window.shareModal = new ShareModal();
         }
+        window.shareModal.show();
       });
     });
 

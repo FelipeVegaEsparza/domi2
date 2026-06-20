@@ -811,11 +811,10 @@ class CoveredTemplate extends TemplateBase {
       const shareBtn = e.target.closest('#share-btn');
       if (shareBtn) {
         e.preventDefault();
-        if (navigator.share) {
-          navigator.share({ url: window.location.href });
-        } else {
-          navigator.clipboard.writeText(window.location.href);
+        if (!window.shareModal) {
+          window.shareModal = new ShareModal();
         }
+        window.shareModal.show();
         return;
       }
 
