@@ -1719,7 +1719,6 @@ body {
     padding: 12px 20px;
     font-size: 0.85rem;
     gap: 8px;
-    white-space: nowrap;
   }
   .share-btn-hero {
     width: 44px;
@@ -1771,7 +1770,6 @@ body {
     font-size: 0.78rem;
     gap: 6px;
     flex-shrink: 0;
-    white-space: nowrap;
   }
   .share-btn-hero {
     width: 40px;
