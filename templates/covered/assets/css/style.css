@@ -1715,6 +1715,17 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
   }
+  .live-btn {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  .share-btn-hero {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
   .player-stats-hero {
     justify-content: center;
     flex-wrap: wrap;
