@@ -1716,10 +1716,23 @@ body {
     margin-bottom: 16px;
   }
   .live-btn {
-    padding: 12px 32px;
-    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 8px;
+    padding: 12px 32px;
+    background: #fff;
+    color: #0a0a0f;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
     white-space: nowrap;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    width: max-content;
+    justify-self: center;
+    flex-shrink: 0;
   }
   .share-btn-hero {
     width: 44px;
@@ -1767,10 +1780,23 @@ body {
     margin-bottom: 16px;
   }
   .live-btn {
-    padding: 8px 24px;
-    font-size: 0.78rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 6px;
+    padding: 8px 24px;
+    background: #fff;
+    color: #0a0a0f;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 700;
     white-space: nowrap;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    width: max-content;
+    justify-self: center;
+    flex-shrink: 0;
   }
   .live-btn i {
     font-size: 0.95rem;
